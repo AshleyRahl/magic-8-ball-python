@@ -1,8 +1,21 @@
 """
 Magic 8 Ball:
-A Magic 8 Ball is a toy used for fortune-telling or seeking advice. 
-It provides random answers to yes-or-no questions. 
-This program simulates the Magic 8 Ball by generating random responses to user questions.
+
+This project simulates a Magic 8 Ball toy in the command-line interface.
+It accepts yes-or-no questions from the user and provides a random response from a predefined list of answers.
+The list of responses includes affirmative, neutral, and negative answers - from the classic 20 Magic 8 Ball toy answers.
+The user can ask multiple questions until they choose to exit the program by typing "quit" or "q".
+
+Implementation Details:
+- The program uses the `random` module to select a random response from the list of possible answers.
+- The `time` module is used to add delays, simulating the shaking and thinking process of the Magic 8 Ball, enhancing the user experience.
+- The program runs in a loop, allowing the user to ask multiple questions until they decide to exit.
+
+Features:
+- A welcoming message that explains how to use the Magic 8 Ball.
+- A list of 20 classic Magic 8 Ball responses.
+- The ability for the user to exit ("quit" or "q").
+
 """
 
 import random # Import the random module to generate random numbers
@@ -63,4 +76,3 @@ while True:
     # Display the Magic 8 Ball's answer
     print("The Magic 8 Ball says: ", magic_ball_answer)
     print()
-    # print(magic_ball_answer)
