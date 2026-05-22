@@ -16,7 +16,11 @@ print("--- Welcome to the Magic 8 Ball! ---")
 # Prompt the user to ask a question
 user_question = input("Ask your question: ")
 
+print("Thinking...\n") # Simulate the Magic 8 Ball thinking
+
 # Pick a random response from the list of responses
 magic_ball_answer = random.choice(responses)
+
 # Display the Magic 8 Ball's answer
-print(magic_ball_answer)
+print("The Magic 8 Ball says: ", magic_ball_answer)
+# print(magic_ball_answer)
