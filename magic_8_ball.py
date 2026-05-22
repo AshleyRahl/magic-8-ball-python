@@ -9,3 +9,11 @@ import random # Import the random module to generate random numbers
 
 # List of possible responses for the Magic 8 Ball
 responses = ["YES", "NO", "MAYBE"]
+
+# Welcome message
+print("--- Welcome to the Magic 8 Ball! ---")
+
+# Prompt the user to ask a question
+user_question = input("Ask your question: ")
+
+print(user_question) # testing in inputworks
