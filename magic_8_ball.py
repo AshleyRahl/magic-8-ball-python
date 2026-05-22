@@ -6,6 +6,7 @@ This program simulates the Magic 8 Ball by generating random responses to user q
 """
 
 import random # Import the random module to generate random numbers
+import time # Import the time module to add delays for a better user experience
 
 # List of possible responses for the Magic 8 Ball
 # responses = ["YES", "NO", "MAYBE"]
@@ -50,11 +51,16 @@ while True:
         print("Thanks for playing! Goodbye...")
         break # This stops the loop
 
+    print("\nShaking the Magic 8 Ball...") # Simulate shaking the Magic 8 Ball
+    time.sleep(1) # Add a delay for a better user experience
+
     print("Thinking...\n") # Simulate the Magic 8 Ball thinking
+    time.sleep(1.5) # Add a delay for a better user experience
 
     # Pick a random response from the list of responses
     magic_ball_answer = random.choice(responses)
 
     # Display the Magic 8 Ball's answer
     print("The Magic 8 Ball says: ", magic_ball_answer)
+    print()
     # print(magic_ball_answer)
