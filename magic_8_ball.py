@@ -11,41 +11,50 @@ import random # Import the random module to generate random numbers
 # responses = ["YES", "NO", "MAYBE"]
 responses = [
     # Affirmative Answers (Yes)
-    "It is certain.",
-    "It is decidedly so.",
-    "Without a doubt.",
-    "Yes - definitely.",
-    "You may rely on it.",
-    "As I see it, yes.",
-    "Most likely.",
-    "Outlook good.",
-    "Yes.",
-    "Signs point to yes.",
+    "It is certain",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes - definitely",
+    "You may rely on it",
+    "As I see it, yes",
+    "Most likely",
+    "Outlook good",
+    "Yes",
+    "Signs point to yes",
     # Neutral Answers (Maybe / Try Again)
-    "Reply hazy, try again.",
-    "Ask again later.",
-    "Better not tell you now.",
-    "Cannot predict now.",
-    "Concentrate and ask again.",
+    "Reply hazy, try again",
+    "Ask again later",
+    "Better not tell you now",
+    "Cannot predict now",
+    "Concentrate and ask again",
     # Negative Answers (No)
-    "Don't count on it.",
-    "My reply is no.",
-    "My sources say no.",
-    "Outlook not so good.",
-    "Very doubtful."
+    "Don't count on it",
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good",
+    "Very doubtful"
 ]
 
 # Welcome message
 print("--- Welcome to the Magic 8 Ball! ---")
+print("Ask any yes-or-no question and receive your answer.")
+print("To exit, type 'quit' or 'q'.\n")
 
-# Prompt the user to ask a question
-user_question = input("Ask your question: ")
+# Loop to allow the user to ask multiple questions
+while True:
+    # Prompt the user to ask a yes-or-no question
+    user_question = input("Ask your question: ")
 
-print("Thinking...\n") # Simulate the Magic 8 Ball thinking
+    # if the user types "quit" or "q", exit the program
+    if user_question.lower() == "quit" or user_question.lower() == "q":
+        print("Thanks for playing! Goodbye...")
+        break # This stops the loop
 
-# Pick a random response from the list of responses
-magic_ball_answer = random.choice(responses)
+    print("Thinking...\n") # Simulate the Magic 8 Ball thinking
 
-# Display the Magic 8 Ball's answer
-print("The Magic 8 Ball says: ", magic_ball_answer)
-# print(magic_ball_answer)
+    # Pick a random response from the list of responses
+    magic_ball_answer = random.choice(responses)
+
+    # Display the Magic 8 Ball's answer
+    print("The Magic 8 Ball says: ", magic_ball_answer)
+    # print(magic_ball_answer)
