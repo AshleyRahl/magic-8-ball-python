@@ -2,25 +2,18 @@
 
 A classic console-based Magic 8-Ball application built in Python to practice programming fundamentals. 
 
-## Implementing:
- * lists 
- * user input
- * randomness
- * control flow
+## Core Concepts Implemented:
+ * **Lists:** To manage and organize the 20 treditional responses.
+ * **User Input:** For prompting the user's question and exit command.
+ * **Randomness:** Importing Python's `random` module, to pick answers from given list
+ * **Control Flow:** A `while` loop for continuous playing and `if` statment for user interaction.
+ * **Time Managment:** Importing the `time` module to add pacing (`time.sleep()`)
 
-## 1. Features Requirment:
-* **Step 1 (Basics):**
-  * Welcome the user - and tells user where they are.
-  * Get user input - the question.
-  * Picks a random response from a pre-defined list (for now: 'YES', 'NO', 'MEH').
-  * Return magic ball responce
-* **Step 2 (Add more Responces):**
-    * Add more to responce list.
-* **Step 3 (Future Enhancements):**
-  * Keep the game running in a loop so the user can ask multiple questions.
-  * Add a way to cleanly exit the game (e.g., typing 'quit').
-* **Step 4 (Shaking):**  
-  * Add a realistic "shaking the ball..." dramatic pause delay.
+## 1. Completed Features:
+* **Step 1 (Basics):** Welcome message and core user input/output execution.
+* **Step 2 (Traditional Responses):** Expanded the basic choices to include all 20 traditional Magic 8-Ball answers.
+* **Step 3 (Continuous Gameplay):** Added a loop so the user can ask multiple questions, with input normalization allowing a clean exit by typing `quit` or `q`.
+* **Step 4 (Immersive UX):** Integrated a simulated "shaking" and "thinking" dramatic pause delay.
 
 ## 2. Logic Flow (Pseudo-code)
 1. IMPORT the necessary randomness tool.
@@ -29,3 +22,12 @@ A classic console-based Magic 8-Ball application built in Python to practice pro
 4. ASK the user for text input.
 5. CHOOSE a random item from the collection.
 6. PRINT the chosen item to the screen.
+
+## How to Run the Project:
+1. Ensure you have Python installed on your local machine.
+2. Clone this repository to your desktop.
+3. Open your terminal, navigate into the project folder, and run:
+   
+```bash
+   python magic_8_ball.py
+```
