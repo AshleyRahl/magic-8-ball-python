@@ -65,10 +65,15 @@ while True:
         break # This stops the loop
 
     print("\nShaking the Magic 8 Ball...") # Simulate shaking the Magic 8 Ball
-    time.sleep(1) # Add a delay for a better user experience
+    time.sleep(0.5) # Add a delay for a better user experience
 
-    print("Thinking...\n") # Simulate the Magic 8 Ball thinking
-    time.sleep(1.5) # Add a delay for a better user experience
+    # Simulate the Magic 8 Ball thinking
+    print("Thinking", end="", flush=True) # Print the base text without moving to a new line, forcing it to display instantly
+    # Loop 3 times to animate the dots sequentially
+    for dot in range(3):
+        time.sleep(1) # Pause for 1 second between each dot for pacing
+        print(".", end="", flush=True) # Append each dot to the same line immediately
+    print("\n") # Move cursor to a new line for clean spacing before the answer
 
     # Pick a random response from the list of responses
     magic_ball_answer = random.choice(responses)
